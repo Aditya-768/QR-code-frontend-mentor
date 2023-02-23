@@ -5,78 +5,31 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-}
-
-.outer-div{
-    background-color: rgb(199, 217, 241);
-    width: 80%;
-    height: 85%;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    background-color: rgb(202, 223, 245);
+    min-height: 100vh;
 }
+
 .qr-code{
-    position: relative;
-    width: 20rem;
-    height: 33rem;
-    text-align: center;
-    padding:20px 5px 5px 5px;
-    margin: 100px auto;
+    max-width: 18rem;
     background-color: white;
     border-radius: 15px;
     font-size: 15px;
+    padding: 1rem 1rem 2rem 1rem;
 }
 .qr-info{
-    padding:10px 0;
-    width: 17rem;
-    margin: 0 auto;
+    margin: .5rem;
+    font-size: 0.9375rem;
+    text-align: center;
+    /* border: .5px solid black; */
+
 }
 .qr-code img{
-    width: 17rem;
-}
-h1{
-    margin: 1.5rem 0;
-    font-size: 1.4rem;
-}
+    max-width: 100%;
 
-@media  screen and (max-width:600px) {
-    .qr-code{
-        height: 25rem;
-        width: 15rem ;
-    }
-    .qr-info{
-        font-size: .7rem;
-        padding: 0;
-        width: 13rem;
-    }
-    h1{
-        font-size: 1rem;
-    }
-    .qr-code img{
-        width: 13rem;
-    }
 }
-@media  screen and (max-width:300px) {
-    .qr-code{
-        height: 22rem;
-        width: 12rem ;
-    }
-    .qr-info{
-        font-size: .6rem;
-        width: 11rem;
-        padding: 1rem 0;
-    }
-    h1{
-        font-size: .9rem;
-        margin: .5rem 0;
-    }
-    .qr-code img{
-        width: 11rem;
-    }
+h3{
+    margin: 1rem 0;
 }
